@@ -43,9 +43,9 @@ class MenuView(arcade.View):
 
     def on_draw(self):
         arcade.start_render()
-        arcade.draw_text("Menu Screen", WIDTH / 1, HEIGHT / 1,
+        arcade.draw_text("Menu Screen", WIDTH / 2, HEIGHT / 2,
                          arcade.color.BLACK, font_size=50, anchor_x="center")
-        arcade.draw_text("Click to advance", WIDTH / 1, HEIGHT / 1 - 75,
+        arcade.draw_text("Click to advance", WIDTH / 2, HEIGHT / 2 - 75,
                          arcade.color.GRAY, font_size=20, anchor_x="center")
 
     def on_mouse_press(self, _x, _y, _button, _modifiers):
@@ -59,9 +59,9 @@ class InstructionView(arcade.View):
 
     def on_draw(self):
         arcade.start_render()
-        arcade.draw_text("Instructions Screen", WIDTH / 1, HEIGHT / 1,
+        arcade.draw_text("Instructions Screen", WIDTH / 2, HEIGHT / 2,
                          arcade.color.BLACK, font_size=50, anchor_x="center")
-        arcade.draw_text("Click to advance", WIDTH / 1, HEIGHT / 1 - 75,
+        arcade.draw_text("Click to advance", WIDTH / 2, HEIGHT / 2 - 75,
                          arcade.color.GRAY, font_size=20, anchor_x="center")
 
     def on_mouse_press(self, _x, _y, _button, _modifiers):
@@ -87,7 +87,7 @@ class GameView(arcade.View):
         self.player_sprite.center_y = 50
         self.player_list.append(self.player_sprite)
 
-        for i in range(10):
+        for i in range(20):
 
             # Create the coin instance
             coin = arcade.Sprite(":resources:images/items/coinGold.png", SPRITE_SCALING / 3)
