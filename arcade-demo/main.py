@@ -34,7 +34,7 @@ os.chdir(file_path)
 
 
 WIDTH = 1000
-HEIGHT =720
+HEIGHT =700
 SPRITE_SCALING = 0.5
 
 class MenuView(arcade.View):
