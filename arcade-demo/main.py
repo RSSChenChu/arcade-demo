@@ -172,7 +172,7 @@ class GameOverView(arcade.View):
                          WIDTH / 2,
                          200,
                          arcade.color.GRAY,
-                         font_size=15,
+                         font_size=17,
                          anchor_x="center")
 
         output_total = f"Total Score: {self.window.total_score}"
